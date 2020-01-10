@@ -21,24 +21,16 @@ class Car {
         this._price = value;
     }
     turnOn(){
-        return this.isOn = true
+        this.isOn = true
     }
     turnOff(){
-        return (this.isOn = false, this.speed = 0)
+        this.isOn = false, this.speed = 0
     }
     accelerate(value) {
-        if(value + this.speed <= this.maxSpeed){
-            return this.speed += value
-        } else {
-            return this.speed = this.maxSpeed
+        value + this.speed <= this.maxSpeed ? this.speed += value : this.speed = this.maxSpeed
         }
-    }
     decelerate(value) {
-        if(this.speed - value >= 0){
-           return this.speed -= value
-        } else {
-            return this.speed = 0
-        }
+        this.speed - value >= 0 ? this.speed -= value : this.speed = 0
     }
     drive(hours){
         if(this.isOn){

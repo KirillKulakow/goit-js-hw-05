@@ -4,10 +4,10 @@ Task 2
 */
 
 class User {
-    constructor({name: str, age: numberAge, followers: numberFollowers}){
-        this.name = str;
-        this.age = numberAge;
-        this.followers = numberFollowers;
+    constructor(user){
+        this.name = user.name;
+        this.age = user.age;
+        this.followers = user.followers
     }
     getInfo(){
         console.log(`User ${this.name} is ${this.age} years old and has ${this.followers} followers`);

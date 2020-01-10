@@ -11,13 +11,12 @@ class Storage {
         return this.items;
     }
     addItem(item){
-        return this.items.push(item)
+        this.items.push(item)
     }
     removeItem(item){
         if(this.items.includes(item)){
             items.splice(items.indexOf(item),1)
         }
-        return items
     }
 }
 
