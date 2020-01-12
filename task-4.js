@@ -11,13 +11,13 @@ class StringBuilder {
         return this._value
     }
     append(string){
-        return this._value = `${this._value}${string}`
+        this._value = `${this._value}${string}`
     }
     prepend(string){
-        return this._value = `${string}${this._value}`
+        this._value = `${string}${this._value}`
     }
     pad(string){
-        return this._value = `${string}${this._value}${string}`
+        this._value = `${string}${this._value}${string}`
     }
 }
 
